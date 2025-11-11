@@ -1,0 +1,519 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  background-image: url('backgrounds/background.png'); /* Adjust path as needed */
+  background-size: cover;         /* Make it fill the screen */
+  background-repeat: no-repeat;   /* Prevent tiling */
+  background-position: center;    /* Center the image */
+  background-attachment: fixed;   /* Optional: keeps it fixed on scroll */
+}
+
+p {
+  color:#f9f9f9;
+}
+
+@font-face {
+  font-family: 'Alphatron';
+  src: url('fonts/alphatrondemodisplay-blr45-webfont.woff2') format('woff2');
+}
+
+.alphatron-text {
+  font-family: 'Alphatron', sans-serif;
+}
+
+@font-face {
+  font-family: 'Zilap Orion';
+  src: url('fonts/ZilapOrionPersonalUseFuturistic-DzA3.ttf') format('truetype');
+}
+.zilap-text {
+  font-family: 'Zilap Orion', sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+.inter-text {
+  font-family: 'Inter', sans-serif;
+}
+/* Navigation */
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #555;
+}
+
+.active {
+  background-color: #00f48e;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.line-graphic,
+.robot-graphic,
+.bar-graphic {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.team-intro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* About Us */
+.about-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rounded-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mission-content p {
+  max-width: 600px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .mission-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-us-section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+
+/* Recruitment Section */
+.recruitment-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recruitment-section h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.team-text {
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.team-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.team-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hover-box {
+  position: relative;
+  text-align: center;
+}
+
+.rounded-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .team-section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .team-text {
+    text-align: left;
+  }
+}
+* Robot Section */
+.robot-section {
+  padding: 40px 20px;
+  text-align: center;
+  height: 50vh;
+}
+
+.robot-section h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  white-space: nowrap;
+}
+
+.robot-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.robot-video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+}
+
+.rounded-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .robot-media {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* Factoids Section */
+.factoids-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.factoids-section h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.factoids-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.factoid-video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+}
+
+.cyan-box {
+  background-color: #00ffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .factoids-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .cyan-box {
+    margin-top: 0;
+  }
+}
+/* Sponsors Page Background */
+.sponsors-page {
+  background-image: url('backgrounds/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sponsor Header */
+.sponsor-header {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sponsor-header h1 {
+  font-family: 'Zilap Orion', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.sponsor-header p {
+  font-size: 1.2rem;
+  margin-top: -10px;
+}
+/* Shimmer Effect */
+.white-text {
+  color: white;
+}
+
+.neon-green-text {
+  color: #00f48e;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #fff, #00f48e, #fff);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+/* Sponsor Gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.site-footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Zilap Orion', sans-serif;
+  font-size: 16px;
+  margin-top: auto;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.graphic-row {
+  display: flex;
+  justify-content: flex-start; /* align to the left */
+  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  margin: 40px 0;
+}
+
+.line-graphic,
+.robot-graphic {
+  width: 220px;   /* increased size */
+  height: auto;
+  margin: 0;
+}
+
+/* Optional: nudge line graphic left */
+.line-graphic {
+  margin-right: -15px;
+}
+
+/* Responsive scaling for smaller screens */
+@media (max-width: 600px) {
+  .graphic-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .line-graphic,
+  .robot-graphic {
+    width: 180px; /* slightly smaller on phones */
+  }
+
+  .line-graphic {
+    margin-right: 0;
+  }
+}
+
+/* SlideShow */
+
+.slideshow-container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+      border: 3px solid rgb(0, 0, 0);
+      box-shadow: 0 0 20px rgb(0, 0, 0);
+      margin-left: 30%;
+      border-radius: 20px;
+      margin-top: 0%;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .active {
+      display: block;
+    }
+
+.circle-img {
+  width: 150px;        /* or any size you want */
+  height: 150px;
+  border-radius: 50%;  /* makes it a perfect circle */
+  object-fit: cover;   /* ensures the image fills the circle */
+  border: 3px solid #00f48e; /* optional: glowing border style */
+  box-shadow: 0 0 15px #00f48e; /* optional: glow effect */
+}
+

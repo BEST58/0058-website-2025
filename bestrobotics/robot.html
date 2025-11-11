@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEST Robotics Team 0058</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="robot.html">Robot</a>
+    <a href="recruitment.html">Recruitment</a>
+    <a href="game.html">Game</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <!-- Robot Section -->
+  <section class="robot-section">
+    <h1 class="zilap-text" style="font-size: 60px; margin-left: 35%; color:#00f48e; margin-top: 3%">OUR ROBOT</h1>
+    <div class="robot-media">
+      <a class="inter-text" href="https://youtu.be/wtWvkmk2tsA">Watch the Robot Video</a>
+        <div class="slideshow-container">
+  <!-- CAD Slideshow-->
+    <div class="slide active"><img src="images/robotCAD.png" alt="Slide 1" /></div>
+    <div class="slide"><img src="images/CAD2.png" alt="Slide 2" /></div>
+    <div class="slide"><img src="images/CAD3.png" alt="Slide 3" /></div>
+    <div class="slide"><img src="images/CAD4.png" alt="Slide 4" /></div>
+    <div class="slide"><img src="images/CAD5.png" alt="Slide 5" /></div>
+    <div class="slide"><img src="images/CAD6.png" alt="Slide 6" /></div>
+    <div class="slide"><img src="images/CAD7.png" alt="Slide 7" /></div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000); // Change every 3 seconds
+  </script>
+
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <h3 class="inter-text">Follow Us!</h3>
+    <div class="social-links">
+      <a class="inter-text" href="https://www.youtube.com/@bestrobotics58">YouTube</a>
+      <a class="inter-text" href="https://www.instagram.com/bestteam58">Instagram</a>
+      <a class="inter-text" href="https://twitter.com/BESTteam58">X</a>
+      <a class="inter-text" href="https://github.com/BEST58">GitHub</a>
+    </div>
+    <h3 class="inter-text">Official BEST Website</h3>
+    <a class="inter-text" href="https://bestrobotics.org/">BEST website</a>
+    <p class="inter-text">&copy; 2025 BEST Robotics Team 0058. All rights reserved.</p>
+  </footer>
+</body>
+</html>
