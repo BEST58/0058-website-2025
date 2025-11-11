@@ -1,0 +1,203 @@
+/* CSS file for BEST Robotics Team 0058 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    position: absolute;
+    top: 375px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: rgb(92, 239, 146);
+    font-size: 100px;
+    padding: 10px 20px;
+}
+h2 {
+    color: #72ffc2;
+    font-size: 50px
+}
+
+h3 {
+    color: #65f5f0;
+}
+
+  @font-face {
+    font-family: 'Zilap Orion';
+    src: url('fonts/ZilapOrionPersonalUseFuturistic-DzA3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+  @font-face {
+    font-family: 'Alphatron';
+    src: url('fonts/alphatrondemodisplay-blr45-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.alphatron-text {
+    font-family: 'Alphatron', sans-serif;
+}
+
+.zilap-text {
+    font-family: 'Zilap Orion', sans-serif;
+}
+
+.inter-text {
+    font-family: 'Inter', sans-serif;
+}
+.rounded-image {
+    border-radius: 20px;
+}
+
+.rectangle-text {
+  width: 300px;              /* fixed width to control horizontal size */
+  padding: 20px;             /* inner spacing for a clean look */
+  background-color: #000000; /* optional: background to visualize the shape */
+  line-height: 1.5;          /* controls vertical spacing between lines */
+  word-wrap: break-word;     /* ensures long words don't overflow */
+  text-align: justify;  
+  margin-left: -100px     /* optional: aligns text to both edges */
+}
+
+.background-section{
+  background-image: url('backgrounds/robotbackground.png'); /* your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Zilap Orion', sans-serif;
+}
+
+body {margin: 0;}
+ 
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+ 
+  ul.topnav li {float: left;}
+ 
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+ 
+  ul.topnav li a.active {background-color: #04AA6D;}
+   
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+  }
+
+  .cyan-line {
+    width: 5px;
+    height: 50px;
+    background-color: cyan;
+    box-shadow: 0 0 10px cyan;
+    margin-top: 250px;
+    margin-left: -275px;
+  }
+
+  .about-us-section {
+  background-image: url('backgrounds/pleasework.png');
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  padding: 100px 20px;            
+  color: white;                   
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.recruitment-section {
+  background-image: url('backgrounds/pleasework.png');
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  padding: 100px 40px;            
+  color: white;                   
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hover-box {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.hover-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  height: 300px
+}
+
+.hover-box:hover img {
+  transform: scale(1.05); /* subtle zoom */
+}
+
+.caption {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  background: rgba(0, 255, 255, 0.7); /* cyan glow */
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover-box:hover .caption {
+  opacity: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.285);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: cyan;
+    box-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+.cyan-box {
+  border: 2px solid #00f48e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px #00f48e;
+  color: white;
+  background-color: #00f48e;
+
+}
