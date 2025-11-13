@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-<title>BEST Robotics Team 0058</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEST Robotics Team 0058</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1; /* Takes up remaining space */
+      padding: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 -2px 10px rgb(0, 0, 0);
+    }
+  </style>
+
+</head>
 <body>
-        <!-- Navegation Bar -->
-    <ul class="topnav">
-        <li><a class="active" href="main.html">Home</a></li>
-        <li><a href="robot.html">Robot</a></li>
-        <li><a href="recruitment.html">Recruitment</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
-    </ul>
-    <section class="background-section" style="height: 700px;">
-    <h1 class="zilap-text" style="font-size: 60px; margin-top: -300px; margin-left: -25px;">Factoids</h1>
-    <video width="900" height="540" controls style="margin-top: 100px; margin-left: -300px; border-radius: 15px;">
-        <source src="2025 Game Animation - Draft 1.mp4" type="video/mp4" alt="Factoid animation">
-        </video>
-    <div class="cyan-box inter-text" style="margin-top:-300px; margin-left: 1120px; ">
-  BEST Website: <a href="https://bestrobotics.org/" target="_blank">https://bestrobotics.org/</a>
+  <!-- Navigation Bar -->
+  <nav class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="robot.html">Robot</a>
+    <a href="recruitment.html">Recruitment</a>
+    <a href="game.html">Game</a>
+    <a href="sponsors.html">Sponsors</a>
+  </nav>
+
+  <div class="content">
+  <!-- Factoids Section -->
+  <section class="factoids-section">
+    <h1 class="zilap-text" style="color: #00f48e; font-size: 60px;">Factoids</h1>
+    <div class="factoids-content">
+      <a class="inter-text" href="https://youtu.be/hpX4D66pk-o">Watch the Robot Video</a>
+      <div class="cyan-box inter-text">
+        BEST Website: <a href="https://bestrobotics.org/" target="_blank">https://bestrobotics.org/</a>
+      </div>
     </div>
-    </section>
-<footer style="background-color: gray; font-size: 28px;">Follow Us!</footer>
-    <a href="https://www.youtube.com/@bestrobotics58">Youtube</a>
-    <a href="https://www.instagram.com/bestteam58">Instagram</a>
-    <a href="https://twitter.com/BESTteam58">X</a>
-    <a href="https://github.com/BEST58">GitHub</a> 
-    <h3 style="color: rgb(0, 0, 0);">Official BEST Website</h3>
-    <a href="https://bestrobotics.org/">BEST website</a>
-<footer class="site-footer">
-&copy; 2025 BEST Robotics Team 0058. All rights reserved.
-</footer>
+  </section>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <h3 class="inter-text">Follow Us!</h3>
+    <div class="social-links">
+      <a class="inter-text" href="https://www.youtube.com/@bestrobotics58">YouTube</a>
+      <a class="inter-text" href="https://www.instagram.com/bestteam58">Instagram</a>
+      <a class="inter-text" href="https://twitter.com/BESTteam58">X</a>
+      <a class="inter-text" href="https://github.com/BEST58">GitHub</a>
+    </div>
+    <h3 class="inter-text">Official BEST Website</h3>
+    <a class="inter-text" href="https://bestrobotics.org/">BEST website</a>
+    <p class="inter-text">&copy; 2025 BEST Robotics Team 0058. All rights reserved.</p>
+  </footer>
 </body>
 </html>
